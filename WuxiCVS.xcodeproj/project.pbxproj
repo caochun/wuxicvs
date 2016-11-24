@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		343E1AAD1DE5D5580063E9D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E1AAC1DE5D5580063E9D6 /* AppDelegate.swift */; };
-		343E1AAF1DE5D5580063E9D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E1AAE1DE5D5580063E9D6 /* ViewController.swift */; };
 		343E1AB21DE5D5580063E9D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343E1AB01DE5D5580063E9D6 /* Main.storyboard */; };
 		343E1AB41DE5D5580063E9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343E1AB31DE5D5580063E9D6 /* Assets.xcassets */; };
-		343E1AB71DE5D5580063E9D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343E1AB51DE5D5580063E9D6 /* LaunchScreen.storyboard */; };
+		343E1AC01DE5D5770063E9D6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343E1ABF1DE5D5770063E9D6 /* MapKit.framework */; };
+		343E1AC21DE5D9B10063E9D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343E1AC11DE5D9B10063E9D6 /* LaunchScreen.storyboard */; };
+		343E1AC51DE5D9E40063E9D6 /* CVSMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E1AC41DE5D9E40063E9D6 /* CVSMapViewController.swift */; };
+		343E1AC71DE5DC030063E9D6 /* CVSAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E1AC61DE5DC030063E9D6 /* CVSAnnotation.swift */; };
+		3456AB161DE727D300E1C3D0 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3456AB151DE727D300E1C3D0 /* SwiftyJSON.swift */; };
+		3456AB1A1DE729AB00E1C3D0 /* cvs.json in Resources */ = {isa = PBXBuildFile; fileRef = 3456AB191DE729AB00E1C3D0 /* cvs.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		343E1AA91DE5D5580063E9D6 /* WuxiCVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WuxiCVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		343E1AAC1DE5D5580063E9D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		343E1AAE1DE5D5580063E9D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		343E1AB11DE5D5580063E9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		343E1AB31DE5D5580063E9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		343E1AB61DE5D5580063E9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		343E1AB81DE5D5580063E9D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343E1ABF1DE5D5770063E9D6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		343E1AC11DE5D9B10063E9D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		343E1AC41DE5D9E40063E9D6 /* CVSMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVSMapViewController.swift; sourceTree = "<group>"; };
+		343E1AC61DE5DC030063E9D6 /* CVSAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVSAnnotation.swift; sourceTree = "<group>"; };
+		3456AB151DE727D300E1C3D0 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		3456AB191DE729AB00E1C3D0 /* cvs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cvs.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343E1AC01DE5D5770063E9D6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				343E1AAB1DE5D5580063E9D6 /* WuxiCVS */,
 				343E1AAA1DE5D5580063E9D6 /* Products */,
+				343E1ABE1DE5D5770063E9D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +64,41 @@
 		343E1AAB1DE5D5580063E9D6 /* WuxiCVS */ = {
 			isa = PBXGroup;
 			children = (
-				343E1AAC1DE5D5580063E9D6 /* AppDelegate.swift */,
-				343E1AAE1DE5D5580063E9D6 /* ViewController.swift */,
+				3456AB171DE728F800E1C3D0 /* Resources */,
+				343E1AC31DE5D9C10063E9D6 /* Supporting Files */,
 				343E1AB01DE5D5580063E9D6 /* Main.storyboard */,
-				343E1AB31DE5D5580063E9D6 /* Assets.xcassets */,
-				343E1AB51DE5D5580063E9D6 /* LaunchScreen.storyboard */,
-				343E1AB81DE5D5580063E9D6 /* Info.plist */,
+				343E1AC41DE5D9E40063E9D6 /* CVSMapViewController.swift */,
+				343E1AC61DE5DC030063E9D6 /* CVSAnnotation.swift */,
+				3456AB151DE727D300E1C3D0 /* SwiftyJSON.swift */,
 			);
 			path = WuxiCVS;
+			sourceTree = "<group>";
+		};
+		343E1ABE1DE5D5770063E9D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343E1ABF1DE5D5770063E9D6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		343E1AC31DE5D9C10063E9D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				343E1AAC1DE5D5580063E9D6 /* AppDelegate.swift */,
+				343E1AB31DE5D5580063E9D6 /* Assets.xcassets */,
+				343E1AB81DE5D5580063E9D6 /* Info.plist */,
+				343E1AC11DE5D9B10063E9D6 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3456AB171DE728F800E1C3D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3456AB191DE729AB00E1C3D0 /* cvs.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				343E1AB71DE5D5580063E9D6 /* LaunchScreen.storyboard in Resources */,
+				3456AB1A1DE729AB00E1C3D0 /* cvs.json in Resources */,
+				343E1AC21DE5D9B10063E9D6 /* LaunchScreen.storyboard in Resources */,
 				343E1AB41DE5D5580063E9D6 /* Assets.xcassets in Resources */,
 				343E1AB21DE5D5580063E9D6 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				343E1AAF1DE5D5580063E9D6 /* ViewController.swift in Sources */,
+				343E1AC51DE5D9E40063E9D6 /* CVSMapViewController.swift in Sources */,
+				343E1AC71DE5DC030063E9D6 /* CVSAnnotation.swift in Sources */,
 				343E1AAD1DE5D5580063E9D6 /* AppDelegate.swift in Sources */,
+				3456AB161DE727D300E1C3D0 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +191,6 @@
 				343E1AB11DE5D5580063E9D6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		343E1AB51DE5D5580063E9D6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				343E1AB61DE5D5580063E9D6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,11 +293,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9Y2VQ245QA;
 				INFOPLIST_FILE = WuxiCVS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nemoworks.WuxiCVS;
+				PRODUCT_BUNDLE_IDENTIFIER = info.nemoworks.wuxicvs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +309,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9Y2VQ245QA;
 				INFOPLIST_FILE = WuxiCVS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nemoworks.WuxiCVS;
+				PRODUCT_BUNDLE_IDENTIFIER = info.nemoworks.wuxicvs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +340,7 @@
 				343E1ABD1DE5D5580063E9D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
