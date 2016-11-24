@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--药房-->
+        <!--无锡药房地图-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CVSMapViewController" customModule="WuxiCVS" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <constraint firstAttribute="trailing" secondItem="gYK-lT-anq" secondAttribute="trailing" id="a92-Bh-w1C"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="药房" id="kSg-br-kDq"/>
+                    <navigationItem key="navigationItem" title="无锡药房地图" id="kSg-br-kDq"/>
                     <connections>
                         <outlet property="cvsMapView" destination="gYK-lT-anq" id="Mb5-8k-Q4I"/>
                     </connections>
